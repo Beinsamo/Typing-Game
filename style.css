@@ -1,0 +1,90 @@
+html, body{
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+*{
+  user-select: none;
+}
+
+.scene{
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.main{
+  width: 800px;
+  height: 100%;
+  float: left;
+  background: #a4ffee;
+  position: relative;
+}
+
+.control{
+  width: 200px;
+  height: 100%;
+  float: left;
+  background: #99f;
+  display: flex;
+
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.box{
+  width:80%;
+  height: 50px;
+  background: #fff;
+  cursor: default;
+  border-radius: 10px;
+  color: #333;
+  font-size: 16px;
+}
+
+.box:hover{
+  box-shadow: 0 0 7px #fff;
+}
+
+.box .name{
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.score, .state, .life{
+  width: 100%;
+  height: 30px;
+  background: #0ff;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 5px;
+  color: #555;
+}
+
+.letter{
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  background-size: 100% 100%;
+}
+
+.btn{
+  width: 80%;
+  height: 30px;
+  border-radius: 5px;
+  background: #0ff;
+  color: #555;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  cursor:pointer;
+}
+
+.btn:hover{
+  box-shadow: 0 0 7px #fff;
+  transform: scale(1.1,1.1);
+}
